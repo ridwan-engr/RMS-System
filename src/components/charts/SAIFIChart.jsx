@@ -1,36 +1,99 @@
+import { useEffect, useState } from "react";
+
 import {
-
-    RadialBarChart,
-
-    RadialBar,
-
-    ResponsiveContainer
-
+    ResponsiveContainer,
+    LineChart,
+    Line,
+    CartesianGrid,
+    Tooltip,
+    Legend,
+    XAxis,
+    YAxis,
+    ReferenceLine
 } from "recharts";
 
-export default function SAIFIChart({
+import api from "../../api/axios";
 
-    value
+export default function SAIFIChart() {
 
-}){
+    const [data, setData] = useState([]);
+    const [loading, setLoading] = useState(true);
 
-    const data=[
+    useEffect(() => {
 
-        {
+        loadSAIFI();
 
-            value
+    }, []);
+
+    async function loadSAIFI() {
+
+        try {
+
+            const res = await api.get("/analytics/saifi");
+
+            const records =
+                res.data.saifi ||
+                res.data ||
+                [];
+
+            setData(records.map(item => ({
+
+                period:
+                    item.period,
+
+                saifi:
+                    item.saifi,
+
+                target:
+                    item.target || 1.5
+
+            })));
 
         }
 
-    ];
+        catch (err) {
 
-    return(
+            console.error(err);
 
-        <div className="card shadow-sm">
+        }
 
-            <div className="card-header">
+        finally {
 
-                SAIFI
+            setLoading(false);
+
+        }
+
+    }
+
+    if (loading) {
+
+        return (
+
+            <div className="card shadow">
+
+                <div className="card-body">
+
+                    Loading SAIFI...
+
+                </div>
+
+            </div>
+
+        );
+
+    }
+
+    return (
+
+        <div className="card shadow">
+
+            <div className="card-header bg-primary text-white">
+
+                <strong>
+
+                    SAIFI Trend Analysis
+
+                </strong>
 
             </div>
 
@@ -38,22 +101,52 @@ export default function SAIFIChart({
 
                 <ResponsiveContainer
                     width="100%"
-                    height={250}
+                    height={380}
                 >
 
-                    <RadialBarChart
+                    <LineChart data={data}>
 
-                        data={data}
+                        <CartesianGrid strokeDasharray="3 3"/>
 
-                    >
+                        <XAxis dataKey="period"/>
 
-                        <RadialBar
+                        <YAxis/>
 
-                            dataKey="value"
+                        <Tooltip/>
+
+                        <Legend/>
+
+                        <ReferenceLine
+
+                            y={1.5}
+
+                            stroke="red"
+
+                            strokeDasharray="5 5"
+
+                            label="Target"
 
                         />
 
-                    </RadialBarChart>
+                        <Line
+
+                            type="monotone"
+
+                            dataKey="saifi"
+
+                            stroke="#007bff"
+
+                            strokeWidth={3}
+
+                            dot={{ r: 5 }}
+
+                            activeDot={{ r: 8 }}
+
+                            name="SAIFI"
+
+                        />
+
+                    </LineChart>
 
                 </ResponsiveContainer>
 
