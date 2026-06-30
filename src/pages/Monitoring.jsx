@@ -12,25 +12,25 @@ from "../api/axios.js";
 import { useSocket } from "../context/SocketContext.jsx";
 
 import SiteStatus
-from "../components/monitoring/SiteStatus";
+from "../components/monitoring/SiteStatus.jsx";
 
 import BatteryGauge
-from "../components/monitoring/BatteryGauge";
+from "../components/monitoring/BatteryGauge.jsx";
 
 import GeneratorGauge
-from "../components/monitoring/GeneratorGauge";
+from "../components/monitoring/GeneratorGauge.jsx";
 
 import GridGauge
-from "../components/monitoring/GridGauge";
+from "../components/monitoring/GridGauge.jsx";
 
 import PowerFlow
-from "../components/monitoring/PowerFlow";
+from "../components/monitoring/PowerFlow.jsx";
 
 import AlarmPanel
-from "../components/monitoring/AlarmPanel";
+from "../components/monitoring/AlarmPanel.jsx";
 
 import LiveMap
-from "../components/monitoring/LiveMap";
+from "../components/monitoring/LiveMap.jsx";
 
 export default function Monitoring() {
 

@@ -2,9 +2,9 @@ import { useEffect, useState } from "react";
 
 import GaugeComponent from "react-gauge-component";
 
-import api from "../../api/axios";
+import api from "../../api/axios.jsx";
 
-import socket from "../../api/socket";
+import socket from "../../api/socket.jsx";
 
 export default function GridGauge() {
 

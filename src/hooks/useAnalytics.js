@@ -10,7 +10,7 @@ import {
     getAnalytics
 
 }
-from "../services/analyticsService";
+from "../services/analyticsService.jsx";
 
 export default function useAnalytics() {
 

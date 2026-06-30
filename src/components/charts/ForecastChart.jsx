@@ -20,7 +20,7 @@ import {
 
 } from "recharts";
 
-import api from "../../api/axios";
+import api from "../../api/axios.jsx";
 
 export default function ForecastChart() {
 

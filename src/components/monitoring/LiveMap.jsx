@@ -30,7 +30,7 @@ import
 
 "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css";
 
-import api from "../../api/axios";
+import api from "../../api/axios.jsx";
 
 export default function LiveMap(){
 
