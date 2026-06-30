@@ -5,7 +5,7 @@ import heroImg from './assets/hero.png'
 import './App.css'
 import Analytics from "./pages/Analytics";
 import Monitoring from "./pages/Monitoring";
-import Settings from "./pages/Settings";
+//import Settings from "./pages/Settings";
 
 function App() {
   const [count, setCount] = useState(0)
