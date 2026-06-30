@@ -74,7 +74,7 @@ const response=
 
 await api.get(
 
-"/energy/powerflow"
+"/energy"
 
 );
 

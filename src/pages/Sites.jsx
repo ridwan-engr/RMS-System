@@ -159,13 +159,15 @@ export default function Sites(){
 
             location:"",
 
-            state:"",
+            status:"",
 
             latitude:"",
 
             longitude:"",
 
-            status:"Active"
+            siteType:"",
+
+            commissioningDate:""
 
         });
 

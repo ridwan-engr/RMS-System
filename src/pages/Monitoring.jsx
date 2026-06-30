@@ -94,11 +94,11 @@ export default function Monitoring() {
 
                 api.get("/sites"),
 
-                api.get("/batteries"),
+                api.get("/battery"),
 
-                api.get("/generators"),
+                api.get("/generator"),
 
-                api.get("/grid/status"),
+                api.get("/grid"),
 
                 api.get("/faults")
 
@@ -202,7 +202,7 @@ export default function Monitoring() {
 
                         <h2>
 
-                            Live Hybrid Power Monitoring
+                            LIVE ASHMAANF'DIL RMS 
 
                         </h2>
 

@@ -107,7 +107,7 @@ export default function Login() {
 
                         <h1 className="display-4">
 
-                            HEMAP
+                            RMS
 
                         </h1>
 
