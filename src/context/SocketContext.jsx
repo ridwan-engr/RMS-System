@@ -10,7 +10,7 @@ import { useAuth }
 from "./AuthContext";
 
 const SocketContext =
-  createContext(null);
+  createContext();
 
 export function SocketProvider({
 
