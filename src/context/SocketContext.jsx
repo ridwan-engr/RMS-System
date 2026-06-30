@@ -4,10 +4,10 @@ import {
   useEffect
 } from "react";
 
-import socket from "../api/socket.jsx";
+import socket from "../api/socket.js";
 
 import { useAuth }
-from "./context/AuthContext";
+from "./context/AuthContext.jsx";
 
 const SocketContext =
   createContext();

@@ -14,9 +14,9 @@ MarkerType
 
 import "reactflow/dist/style.css";
 
-import api from "../../api/axios.jsx";
+import api from "../../api/axios.js";
 
-import socket from "../../api/socket.jsx";
+import socket from "../../api/socket.js";
 
 export default function PowerFlow(){
 

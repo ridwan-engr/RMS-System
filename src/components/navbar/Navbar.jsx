@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { useAuth } from "../../context/AuthContext";
+import { useAuth } from "../../context/AuthContext.jsx";
 
 export default function Navbar() {
 
@@ -26,7 +26,7 @@ export default function Navbar() {
         <span
           className="navbar-brand fw-bold"
         >
-          HEMAP Dashboard
+          RMS Dashboard
         </span>
 
         <div className="ms-auto d-flex align-items-center">

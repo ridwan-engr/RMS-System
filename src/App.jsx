@@ -1,7 +1,7 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 
-import Analytics from "./pages/Analytics";
-import Monitoring from "./pages/Monitoring";
+import Analytics from "./pages/Analytics.jsx";
+import Monitoring from "./pages/Monitoring.jsx";
 // import Settings from "./pages/Settings";
 
 function App() {

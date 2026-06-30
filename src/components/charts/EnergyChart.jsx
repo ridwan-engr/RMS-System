@@ -22,7 +22,7 @@ import {
 
 } from "recharts";
 
-import api from "../../api/axios.jsx";
+import api from "../../api/axios.js";
 
 export default function EnergyChart() {
 
