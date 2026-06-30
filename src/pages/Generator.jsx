@@ -35,7 +35,7 @@ export default function Generator() {
 
         const res = await api.get("/generator");
 
-        setGenerators(res.data.generators || []);
+        setGenerators(res.data.generator || []);
 
     }
 

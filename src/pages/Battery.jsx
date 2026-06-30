@@ -53,7 +53,7 @@ export default function Battery() {
 
         const res = await api.get("/battery");
 
-        setBatteries(res.data.batteries || []);
+        setBatteries(res.data.battery || []);
 
     }
 

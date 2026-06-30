@@ -21,6 +21,8 @@ export default function Grid() {
 
         activePower:"",
 
+        outageStatus:"",
+
         reactivePower:"",
 
         apparentPower:"",
@@ -136,6 +138,8 @@ export default function Grid() {
             frequency:"",
 
             activePower:"",
+
+            outageStatus:"",
 
             reactivePower:"",
 
