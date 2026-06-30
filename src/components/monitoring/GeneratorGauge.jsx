@@ -59,7 +59,7 @@ export default function GeneratorGauge() {
         try {
 
             const response =
-                await api.get("/generators/live");
+                await api.get("/generator/live");
 
             setGenerator(response.data);
 

@@ -54,7 +54,7 @@ export default function BatteryGauge() {
 
             const response =
 
-                await api.get("/batteries/live");
+                await api.get("/battery/live");
 
             setBattery(response.data);
 
