@@ -12,11 +12,11 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 import {
   AuthProvider
-} from "./context/AuthContext";
+} from "./context/AuthContext.jsx";
 
 import {
   SocketProvider
-} from "./context/SocketContext";
+} from "./context/SocketContext.jsx";
 
 ReactDOM.createRoot(
   document.getElementById("root")

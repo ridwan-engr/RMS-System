@@ -1,15 +1,15 @@
 import { useEffect, useState } from "react";
-import DashboardLayout from "../layouts/DashboardLayout";
-import api from "../api/axios";
+import DashboardLayout from "../layouts/DashboardLayout.jsx";
+import api from "../api/axios.js";
 
-import KPI from "../components/cards/KPI";
+import KPI from "../components/cards/KPI.jsx";
 
-import EnergyChart from "../components/charts/EnergyChart";
-import SolarChart from "../components/charts/SolarChart";
-import BatteryChart from "../components/charts/BatteryChart";
-import GeneratorChart from "../components/charts/GeneratorChart";
-import GridChart from "../components/charts/GridChart";
-import FaultChart from "../components/charts/FaultChart";
+import EnergyChart from "../components/charts/EnergyChart.jsx";
+import SolarChart from "../components/charts/SolarChart.jsx";
+import BatteryChart from "../components/charts/BatteryChart.jsx";
+import GeneratorChart from "../components/charts/GeneratorChart.jsx";
+import GridChart from "../components/charts/GridChart.jsx";
+import FaultChart from "../components/charts/FaultChart.jsx";
 
 export default function Reports(){
 

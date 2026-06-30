@@ -3,8 +3,8 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
-import Analytics from "./pages/Analytics";
-import Monitoring from "./pages/Monitoring";
+import Analytics from "./pages/Analytics.jsx";
+import Monitoring from "./pages/Monitoring.jsx";
 //import Settings from "./pages/Settings";
 
 function App() {

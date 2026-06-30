@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
-import DashboardLayout from "../layouts/DashboardLayout";
-import api from "../api/axios";
+import DashboardLayout from "../layouts/DashboardLayouts.jsx";
+import api from "../api/axios.js";
 
-import KPI from "../components/cards/KPI";
+import KPI from "../components/cards/KPI.jsx";
 
-import EnergyChart from "../components/charts/EnergyChart";
-import ForecastChart from "../components/charts/ForecastChart";
+import EnergyChart from "../components/charts/EnergyChart.jsx";
+import ForecastChart from "../components/charts/ForecastChart.jsx";
 
-import FaultTable from "../components/tables/FaultTable";
+//import FaultTable from "../components/tables/FaultTable";
 
 export default function Dashboard() {
 

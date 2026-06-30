@@ -7,10 +7,10 @@ import {
 } from "react";
 
 import DashboardLayout
-from "../layouts/DashboardLayout";
+from "../layouts/DashboardLayouts.jsx";
 
 import api
-from "../api/axios";
+from "../api/axios.js";
 
 export default function Sites(){
 

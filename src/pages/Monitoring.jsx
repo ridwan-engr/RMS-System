@@ -4,13 +4,13 @@ import {
 } from "react";
 
 import DashboardLayout
-from "../layouts/DashboardLayout";
+from "../layouts/DashboardLayouts.jsx";
 
 import api
-from "../api/axios";
+from "../api/axios.js";
 
-import useSocket
-from "../hooks/useSocket";
+//import useSocket
+//from "../hooks/useSocket.jsx";
 
 import SiteStatus
 from "../components/monitoring/SiteStatus";

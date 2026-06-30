@@ -1,55 +1,55 @@
 import { useEffect } from "react";
 
 import DashboardLayout
-from "../layouts/DashboardLayout";
+from "../layouts/DashboardLayouts.jsx";
 
 import useAnalytics
-from "../hooks/useAnalytics";
+from "../hooks/useAnalytics.js";
 
 import KPI
-from "../components/cards/KPI";
+from "../components/cards/KPI.jsx";
 
 import ReliabilityCard
-from "../components/cards/ReliabilityCard";
+from "../components/cards/ReliabilityCard.jsx";
 
 import ResilienceCard
-from "../components/cards/ResilienceCard";
+from "../components/cards/ResilienceCard.jsx";
 
 import RenewableMixCard
-from "../components/cards/RenewableMixCard";
+from "../components/cards/RenewableMixCard.jsx";
 
 import SolarChart
-from "../components/charts/SolarChart";
+from "../components/charts/SolarChart.jsx";
 
 import BatteryChart
-from "../components/charts/BatteryChart";
+from "../components/charts/BatteryChart.jsx";
 
 import EnergyChart
-from "../components/charts/EnergyChart";
+from "../components/charts/EnergyChart.jsx";
 
 import GeneratorChart
-from "../components/charts/GeneratorChart";
+from "../components/charts/GeneratorChart.jsx";
 
 import GridChart
-from "../components/charts/GridChart";
+from "../components/charts/GridChart.jsx";
 
 import ForecastChart
-from "../components/charts/ForecastChart";
+from "../components/charts/ForecastChart.jsx";
 
 import FaultChart
-from "../components/charts/FaultChart";
+from "../components/charts/FaultChart.jsx";
 
 import SAIDIChart
-from "../components/charts/SAIDIChart";
+from "../components/charts/SAIDIChart.jsx";
 
 import SAIFIChart
-from "../components/charts/SAIFIChart";
+from "../components/charts/SAIFIChart.jsx";
 
 import ENSChart
-from "../components/charts/ENSChart";
+from "../components/charts/ENSChart.jsx";
 
 import LOLPChart
-from "../components/charts/LOLPChart";
+from "../components/charts/LOLPChart.jsx";
 
 export default function Analytics() {
 
