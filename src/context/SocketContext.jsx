@@ -7,7 +7,7 @@ import {
 import socket from "../api/socket.js";
 
 import { useAuth }
-from "./context/AuthContext.jsx";
+from "./AuthContext.jsx";
 
 const SocketContext =
   createContext();
