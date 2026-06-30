@@ -38,11 +38,11 @@ export default function GeneratorChart() {
 
         try {
 
-            const res = await api.get("/generators");
+            const res = await api.get("/generator");
 
             const generators =
 
-                res.data.generators ||
+                res.data.generator ||
 
                 res.data ||
 

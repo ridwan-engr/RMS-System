@@ -38,11 +38,11 @@ export default function BatteryChart() {
 
         try {
 
-            const res = await api.get("/batteries");
+            const res = await api.get("/battery");
 
             const batteries =
 
-                res.data.batteries ||
+                res.data.battery ||
 
                 res.data ||
 
