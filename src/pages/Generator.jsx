@@ -33,7 +33,7 @@ export default function Generator() {
 
     async function loadGenerators() {
 
-        const res = await api.get("/generators");
+        const res = await api.get("/generator");
 
         setGenerators(res.data.generators || []);
 
@@ -65,13 +65,13 @@ export default function Generator() {
 
         if(editing){
 
-            await api.put(`/generators/${editing}`,form);
+            await api.put(`/generator/${editing}`,form);
 
         }
 
         else{
 
-            await api.post("/generators",form);
+            await api.post("/generator",form);
 
         }
 
@@ -93,7 +93,7 @@ export default function Generator() {
 
         if(!window.confirm("Delete Generator?")) return;
 
-        await api.delete(`/generators/${id}`);
+        await api.delete(`/generator/${id}`);
 
         loadGenerators();
 

@@ -17,7 +17,9 @@ export default function Battery() {
 
         chemistry: "Lithium-Ion",
 
-        capacityKWh: "",
+        capacityPowerKWh: "",
+
+        dischargePowerKW: "",
 
         voltage: "",
 
@@ -49,7 +51,7 @@ export default function Battery() {
 
     async function loadBatteries() {
 
-        const res = await api.get("/batteries");
+        const res = await api.get("/battery");
 
         setBatteries(res.data.batteries || []);
 
@@ -85,7 +87,7 @@ export default function Battery() {
 
                 await api.put(
 
-                    `/batteries/${editing}`,
+                    `/battery/${editing}`,
 
                     form
 
@@ -97,7 +99,7 @@ export default function Battery() {
 
                 await api.post(
 
-                    "/batteries",
+                    "/battery",
 
                     form
 
@@ -123,7 +125,7 @@ export default function Battery() {
 
         if (!window.confirm("Delete Battery?")) return;
 
-        await api.delete(`/batteries/${id}`);
+        await api.delete(`/battery/${id}`);
 
         loadBatteries();
 
@@ -150,6 +152,10 @@ export default function Battery() {
             chemistry: "Lithium-Ion",
 
             capacityKWh: "",
+
+            capacityPowerKWh: "",
+
+            dischargePowerKW: "",
 
             voltage: "",
 
