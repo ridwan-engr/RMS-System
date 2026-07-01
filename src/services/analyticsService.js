@@ -1,6 +1,40 @@
 import api from "../api/axios.js";
 
 
+export async function getSites() {
+
+    const response =
+        await api.get(
+            "/sites"
+        );
+
+    return response.data;
+
+}
+
+
+export async function getbattery() {
+
+    const response =
+        await api.get(
+            "/battery"
+        );
+
+    return response.data;
+
+}
+
+export async function getgenerator() {
+
+    const response =
+        await api.get(
+            "/generator"
+        );
+
+    return response.data;
+
+}
+
 // Get Complete Analytics Dashboard
 
 export async function getAnalytics() {

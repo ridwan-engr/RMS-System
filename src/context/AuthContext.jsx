@@ -6,14 +6,14 @@ import {
 } from "react";
 
 const AuthContext =
-  createContext(null);
+  createContext();
 
 export function AuthProvider({
   children
 }) {
 
   const [user, setUser] =
-    useState(null);
+    useState();
 
   const [loading, setLoading] =
     useState(true);

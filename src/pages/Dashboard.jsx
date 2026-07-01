@@ -81,19 +81,23 @@ export default function Dashboard() {
 
                 api.get("/solar"),
 
-                api.get("/batteries"),
+                api.get("/battery"),
 
-                api.get("/generators"),
+                api.get("/generator"),
 
                 api.get("/faults"),
 
                 api.get("/analytics"),
 
-                api.get("/grid/status"),
+                api.get("/grid"),
 
                 api.get("/energy"),
 
-                api.get("/forecasts")
+                api.get("/forecast"),
+
+                api.get("/auth"),
+
+                api.get ("/reports")
 
             ]);
 
