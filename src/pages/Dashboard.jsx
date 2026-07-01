@@ -73,7 +73,11 @@ export default function Dashboard() {
 
                 energy,
 
-                forecast
+                forecast,
+
+                auth,
+
+                reports
 
             ] = await Promise.all([
 
@@ -95,7 +99,7 @@ export default function Dashboard() {
 
                 api.get("/forecast"),
 
-                api.get("/auth"),
+                api.get("/auth/login"),
 
                 api.get ("/reports")
 
