@@ -3,7 +3,7 @@ import {
     useState
 } from "react";
 
-import DashboardLayout
+import DashboardLayouts
 from "../layouts/DashboardLayouts.jsx";
 
 import api

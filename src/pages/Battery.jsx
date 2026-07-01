@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import DashboardLayout from "../layouts/DashboardLayout.jsx";
+import DashboardLayouts from "../layouts/DashboardLayout.jsx";
 import api from "../api/axios.js";
 
 export default function Battery() {

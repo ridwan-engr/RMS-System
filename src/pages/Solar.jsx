@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import DashboardLayout from "../layouts/DashboardLayouts.jsx";
+import DashboardLayouts from "../layouts/DashboardLayouts.jsx";
 import api from "../api/axios.js";
 
 export default function Solar() {
