@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import api from "../api/axios.js";
 import { useAuth } from "../context/AuthContext.jsx";
+import DashboardLayout from "../layouts/DashboardLayout.jsx";
 
 export default function Login() {
 
@@ -86,6 +87,8 @@ export default function Login() {
     };
 
     return (
+
+        <DashboardLayout>
 
         <div
             className="container-fluid vh-100"
@@ -289,6 +292,8 @@ export default function Login() {
             </div>
 
         </div>
+
+    </DashboardLayout>
 
     );
 
