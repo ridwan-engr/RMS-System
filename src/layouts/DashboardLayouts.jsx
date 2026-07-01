@@ -1,7 +1,7 @@
 import Navbar from "../components/navbar/Navbar.jsx";
 import Sidebar from "../components/sidebar/Sidebar.jsx";
 
-export default function DashboardLayout({ children }) {
+export default function DashboardLayouts({ children }) {
 
   return (
 
