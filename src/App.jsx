@@ -2,7 +2,7 @@ import { Routes, Route, Navigate } from "react-router-dom";
 
 import Analytics from "./pages/Analytics.jsx";
 import Monitoring from "./pages/Monitoring.jsx";
-import Site from "./pages/Sites.jsx";
+import Site from "./pages/Site.jsx";
 import Login from "./pages/Login.jsx";
 import Solar from "./pages/Solar.jsx";
 
