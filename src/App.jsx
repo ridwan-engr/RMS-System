@@ -5,14 +5,16 @@ import Monitoring from "./pages/Monitoring.jsx";
 import Site from "./pages/Site.jsx";
 import Login from "./pages/Login.jsx";
 import Solar from "./pages/Solar.jsx";
+import Battery from "./pages/Battery.jsx";
+import Dashboard from "./pages/Dashboard.jsx";
+import EnergyRecord from "./pages/EnergyRecord.jsx";
+import FaultLog from "./pages/FaultLog.jsx";
 
 // import Settings from "./pages/Settings";
 
 function App() {
   return (
     <Routes>
-      <Route path="/" 
-      element={<Navigate to="/monitoring" replace />} />
 
       <Route
         path="/monitoring"
@@ -37,6 +39,26 @@ function App() {
        <Route
         path="/solar"
         element={<Solar />}
+      />
+
+      <Route
+        path="/battery"
+        element={<Battery />}
+      />
+
+      <Route
+        path="/dashboard"
+        element={<Dashboard />}
+      />
+
+      <Route
+        path="/faultsl"
+        element={<FaultLog />}
+      />
+
+      <Route
+        path="/energy"
+        element={<EnergyRecord />}
       />
 
       {/* <Route path="/settings" element={<Settings />} /> */}
