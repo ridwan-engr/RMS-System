@@ -62,10 +62,10 @@ const menus = [
     path: "/reports"
   },
 
-  {
-    title: "Settings",
-    path: "/settings"
-  }
+  //{
+   // title: "Settings",
+  //  path: "/settings"
+ // }
 
 ];
 
@@ -88,7 +88,7 @@ export default function Sidebar() {
 
         <h4>
 
-          HEMAP
+          RMS 
 
         </h4>
 
