@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import DashboardLayout from "../layouts/DashboardLayouts.jsx";
+import DashboardLayouts from "../layouts/DashboardLayout.jsx";
 import api from "../api/axios.js";
 
 import KPI from "../components/cards/KPI.jsx";

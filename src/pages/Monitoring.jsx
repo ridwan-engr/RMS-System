@@ -4,7 +4,7 @@ import {
 } from "react";
 
 import DashboardLayouts
-from "../layouts/DashboardLayouts.jsx";
+from "../layouts/DashboardLayout.jsx";
 
 import api
 from "../api/axios.js";

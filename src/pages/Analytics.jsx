@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 
-import DashboardLayout
-from "../layouts/DashboardLayouts.jsx";
+import DashboardLayouts
+from "../layouts/DashboardLayout.jsx";
 
 import useAnalytics
 from "../hooks/useAnalytics.js";
