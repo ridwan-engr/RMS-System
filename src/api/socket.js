@@ -16,7 +16,7 @@ const socket = io(
 
     autoConnect: false,
     reconnection: true,
-    reconnectionAttempts: 10,
+    reconnectionAttempts: 20,
     reconnectionDelay: 3000
   }
 
