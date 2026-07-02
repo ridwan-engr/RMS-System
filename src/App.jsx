@@ -1,23 +1,33 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 
-import Analytics from "./pages/Analytics.jsx";
+import Dashboard from "./pages/Dashboard.jsx";
 import Monitoring from "./pages/Monitoring.jsx";
+import Analytics from "./pages/Analytics.jsx";
 import Site from "./pages/Site.jsx";
-//import Login from "./pages/Login.jsx";
 import Solar from "./pages/Solar.jsx";
 import Battery from "./pages/Battery.jsx";
-//import Dashboard from "./pages/Dashboard.jsx";
 import EnergyRecord from "./pages/EnergyRecord.jsx";
 import FaultLog from "./pages/FaultLog.jsx";
-
-// import Settings from "./pages/Settings";
+import Login from "./pages/Login.jsx";
 
 function App() {
   return (
     <Routes>
 
-      <Route path="/" 
-      element={<Navigate to="/monitoring" replace />} />
+      <Route
+        path="/"
+        element={<Navigate to="/monitoring" replace />}
+      />
+
+      <Route
+        path="/login"
+        element={<Login />}
+      />
+
+      <Route
+        path="/dashboard"
+        element={<Dashboard />}
+      />
 
       <Route
         path="/monitoring"
@@ -29,12 +39,12 @@ function App() {
         element={<Analytics />}
       />
 
-       <Route
+      <Route
         path="/sites"
         element={<Site />}
       />
-      
-       <Route
+
+      <Route
         path="/solar"
         element={<Solar />}
       />
@@ -54,7 +64,11 @@ function App() {
         element={<EnergyRecord />}
       />
 
-      {/* <Route path="/settings" element={<Settings />} /> */}
+      <Route
+        path="*"
+        element={<Navigate to="/monitoring" replace />}
+      />
+
     </Routes>
   );
 }
