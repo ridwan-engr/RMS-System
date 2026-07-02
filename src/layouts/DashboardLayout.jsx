@@ -2,19 +2,18 @@ import Navbar from "../components/navbar/Navbar.jsx";
 import Sidebar from "../components/sidebar/Sidebar.jsx";
 
 export default function DashboardLayout({ children }) {
-
   return (
-
     <div
       style={{
         display: "flex",
         minHeight: "100vh",
-        background: "#f5f7fb"
+        backgroundColor: "#f4f6f9"
       }}
     >
-
+      {/* Sidebar */}
       <Sidebar />
 
+      {/* Main Content */}
       <div
         style={{
           flex: 1,
@@ -22,21 +21,20 @@ export default function DashboardLayout({ children }) {
           flexDirection: "column"
         }}
       >
-
+        {/* Top Navigation */}
         <Navbar />
 
+        {/* Page Content */}
         <main
           style={{
-            padding: "25px"
+            flex: 1,
+            padding: "20px",
+            overflowY: "auto"
           }}
         >
           {children}
         </main>
-
       </div>
-
     </div>
-
   );
-
 }
