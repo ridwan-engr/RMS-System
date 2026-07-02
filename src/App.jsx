@@ -31,7 +31,7 @@ function App() {
 
        <Route
         path="/sites"
-        element={<Analytics />}
+        element={<Site />}
       />
 
        <Route
@@ -55,7 +55,7 @@ function App() {
       />
 
       <Route
-        path="/faultsl"
+        path="/faults"
         element={<FaultLog />}
       />
 
